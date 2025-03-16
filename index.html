@@ -4,56 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoltAra Engineering</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 { color: #333; }
-        p { color: #666; }
-        .contact {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to VoltAra Engineering</h1>
-        <p><strong>Reliable Power, Trusted Connections</strong></p>
-        <p>We specialize in electrical wiring, installation, and maintenance.</p>
-        
-        <div class="contact">
-            <p>📧 Email: <a href="mailto:saptak@voltaraengineering.com">saptak@voltaraengineering.com</a></p>
-            <p>📞 Contact: <a href="tel:+919433646899">094336 46899</a></p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">VoltAra Engineering</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <hr>
+    <!-- Hero Section with Auto-Sliding Images -->
+    <section id="home" class="hero-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/slide1.jpg" alt="Reliable Power Solutions">
+                    <div class="slide-caption">
+                        <h2>Reliable Power Solutions</h2>
+                        <p>Ensuring consistent and safe electrical installations.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide2.jpg" alt="Innovative Civil Engineering">
+                    <div class="slide-caption">
+                        <h2>Innovative Civil Engineering</h2>
+                        <p>Building structures that stand the test of time.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slide3.jpg" alt="Expert Maintenance Services">
+                    <div class="slide-caption">
+                        <h2>Expert Maintenance Services</h2>
+                        <p>Keeping your systems running efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>For inquiries, reach us at:</p>
-        <p>📧 Email: <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a></p>
-        <p>📞 Phone: <a href="tel:+919433646899">094336 46899</a></p>
-    </div>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="tabs">
+                <button class="tab-link" onclick="openService(event, 'civil')">Civil Engineering</button>
+                <button class="tab-link" onclick="openService(event, 'electrical')">Electrical Engineering</button>
+            </div>
+            <div id="civil" class="tab-content">
+                <h3>Civil Engineering</h3>
+                <p>We provide comprehensive civil engineering services, including structural design, construction management, and infrastructure development.</p>
+            </div>
+            <div id="electrical" class="tab-content">
+                <h3>Electrical Engineering</h3>
+                <p>Our electrical engineering services encompass wiring, installation, maintenance, and system upgrades to ensure safety and efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries, reach us at:</p>
+            <p>📧 Email: <a href="mailto:saptak@voltaraengineering.com">saptak@voltaraengineering.com</a></p>
+            <p>📞 Phone: <a href="tel:+919433646899">094336 46899</a></p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
+
