@@ -4,15 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoltAra Engineering</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="VoltAra Engineering - Reliable Civil & Electrical Solutions">
-    <meta name="keywords" content="VoltAra, Engineering, Civil, Electrical, Construction">
-    <meta name="author" content="VoltAra Engineering">
-    
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <style>
         /* Global Styles */
         body {
@@ -105,7 +97,7 @@
             position: relative;
             width: 100%;
             height: 300px;
-            background: url('images/banner.jpg') no-repeat center center/cover;
+            background: url('https://images.unsplash.com/photo-1516388723173-b6d352046ac2?w=1600') no-repeat center center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -132,14 +124,43 @@
             max-width: 900px;
             margin: 40px auto;
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
+            padding: 25px;
             border-radius: 10px;
             backdrop-filter: blur(8px);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            line-height: 1.6;
         }
 
         h2 { color: #00aaff; }
+
+        /* Service Buttons */
+        .service-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .civil { background: #007bff; }
+        .electrical { background: #28a745; }
+
+        .service-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
 
         /* Contact Section */
         .contact {
@@ -156,10 +177,11 @@
         .contact a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>
-    
+
     <!-- Navbar -->
     <div class="navbar">
         <div class="logo">VoltAra Engineering</div>
@@ -170,30 +192,6 @@
             <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="civil.html"><i class="fas fa-building"></i> Civil</a></li>
             <li><a href="electrical.html"><i class="fas fa-bolt"></i> Electrical</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </div>
+            <li><a href="#contact"><i class=
 
-    <!-- Animated Banner -->
-    <div class="banner">
-        <h1>Welcome to VoltAra Engineering</h1>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p><i class="fas fa-envelope"></i> 📧 Email: <a href="mailto:saptak@voltaraengineering.com">saptak@voltaraengineering.com</a></p>
-        <p><i class="fas fa-phone"></i> 📞 Phone: <a href="tel:+919433646899">094336 46899</a></p>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            let menu = document.querySelector(".menu");
-            menu.classList.toggle("active");
-            document.querySelector(".menu-toggle i").classList.toggle("fa-times"); // Change icon when toggled
-        }
-    </script>
-
-</body>
-</html>
 
