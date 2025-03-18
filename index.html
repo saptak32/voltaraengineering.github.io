@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoltAra Engineering</title>
+    
+    <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/134403f3c6.js" crossorigin="anonymous"></script>
+    
     <style>
         /* General Styles */
         body {
@@ -29,7 +32,7 @@
             z-index: 1000;
         }
 
-        .logo-container {
+        .navbar .logo-container {
             display: flex;
             align-items: center;
         }
@@ -79,6 +82,7 @@
         }
 
         .banner h1 {
+            position: relative;
             font-size: 36px;
             background: rgba(44, 62, 80, 0.9);
             color: #FFD700;
@@ -98,18 +102,55 @@
 
         h2 { color: #2C3E50; }
 
-        /* Contact Section */
-        .contact p {
+        /* About Section */
+        .about-container {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            margin: 10px 0;
+            text-align: left;
         }
 
-        .contact i {
-            margin-right: 8px;
-            color: #2C3E50;
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-image {
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        /* Services */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-card {
+            width: 280px;
+            background: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact */
+        .contact {
+            font-size: 18px;
         }
 
         .contact a {
@@ -153,14 +194,42 @@
         <h1>Reliable Power, Trusted Connections</h1>
     </div>
 
+    <!-- About Us -->
+    <div id="about" class="container">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>VoltAra Engineering is a leading provider of electrical and civil engineering solutions. With a team of expert engineers and certified technicians, we ensure high-quality service, efficiency, and safety in all our projects.</p>
+            </div>
+            <img class="about-image" src="about.jpg" alt="About VoltAra">
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img class="service-image" src="civil.jpg" alt="Civil Engineering">
+                <h3>Civil Engineering</h3>
+                <p>Complete civil engineering solutions, including construction, renovation, and safety assessments.</p>
+            </div>
+            <div class="service-card">
+                <img class="service-image" src="electrical.jpg" alt="Electrical Engineering">
+                <h3>Electrical Engineering</h3>
+                <p>Expert wiring, installation, and maintenance of LT 440V & HT 11KV, 33KV.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact -->
     <div id="contact" class="container contact">
         <h2>Contact Us</h2>
-        <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
-        <p><i class="fas fa-phone"></i><strong>Phone:</strong> <a href="tel:+919433646899">094336 46899</a></p>
-        <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a></p>
-        <p><i class="fab fa-whatsapp"></i><strong>WhatsApp:</strong> <a href="https://wa.me/919433646899" target="_blank">Chat Now</a></p>
-        <p><i class="fab fa-facebook"></i><strong>Facebook:</strong> <a href="https://www.facebook.com/share/15yNN2R4ys/" target="_blank">Follow Us</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
+        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> <a href="tel:+919433646899">094336 46899</a></p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/919433646899">Chat Now</a></p>
+        <p><i class="fab fa-facebook"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/share/15yNN2R4ys/" target="_blank">Follow Us</a></p>
     </div>
 
     <!-- Footer -->
@@ -170,6 +239,7 @@
 
 </body>
 </html>
+
 
 
 
