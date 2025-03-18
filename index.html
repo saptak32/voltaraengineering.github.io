@@ -29,7 +29,7 @@
             z-index: 1000;
         }
 
-        .navbar .logo-container {
+        .logo-container {
             display: flex;
             align-items: center;
         }
@@ -79,7 +79,6 @@
         }
 
         .banner h1 {
-            position: relative;
             font-size: 36px;
             background: rgba(44, 62, 80, 0.9);
             color: #FFD700;
@@ -99,55 +98,18 @@
 
         h2 { color: #2C3E50; }
 
-        /* About Section */
-        .about-container {
+        /* Contact Section */
+        .contact p {
             display: flex;
             align-items: center;
-            text-align: left;
-        }
-
-        .about-text {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .about-image {
-            max-width: 300px;
-            border-radius: 10px;
-            margin: 20px;
-        }
-
-        /* Services */
-        .services {
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-        }
-
-        .service-card {
-            width: 280px;
-            background: #FFFFFF;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .service-card:hover {
-            transform: scale(1.05);
-        }
-
-        .service-image {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        /* Contact */
-        .contact {
             font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact i {
+            margin-right: 8px;
+            color: #2C3E50;
         }
 
         .contact a {
@@ -191,44 +153,14 @@
         <h1>Reliable Power, Trusted Connections</h1>
     </div>
 
-    <!-- About Us -->
-    <div id="about" class="container">
-        <h2>About Us</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>VoltAra Engineering is a leading provider of electrical and civil engineering solutions. With a team of expert engineers and certified technicians, we ensure high-quality service, efficiency, and safety in all our projects.</p>
-                <p>We specialize in electrical installations, industrial wiring, high-voltage maintenance, and complete civil construction services. Our mission is to deliver innovative and sustainable solutions to meet the evolving needs of our clients.</p>
-            </div>
-            <img class="about-image" src="pexels-pixabay-414967.jpg" alt="About VoltAra">
-        </div>
-    </div>
-
-    <!-- Services -->
-    <div id="services" class="container">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-card">
-                <img class="service-image" src="pexels-500photos-com-15338-93400.jpg" alt="Civil Engineering">
-                <h3>Civil Engineering</h3>
-                <p>We offer complete civil engineering solutions, including construction, renovation, and structural safety assessments.</p>
-            </div>
-            <div class="service-card">
-                <img class="service-image" src="pexels-pok-rie-33563-171428.jpg" alt="Electrical Engineering">
-                <img class="service-image" src="pexels-magda-ehlers-pexels-28942196.jpg" alt="Electrical Engineering Extra">
-                <h3>Electrical Engineering</h3>
-                <p>Expert wiring, Installation, and Repair maintenance of LT 440V & HT 11KV, 33KV.</p>
-            </div>
-        </div>
-    </div>
-
     <!-- Contact -->
     <div id="contact" class="container contact">
         <h2>Contact Us</h2>
-        <p><strong>📍 Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
-        <p><strong>📞 Phone:</strong> <a href="tel:+919433646899">094336 46899</a></p>
-        <p><strong>📧 Email:</strong> <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a></p>
-        <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/919433646899">Chat Now</a></p>
-        <p><strong>🔵 Facebook:</strong> <a href="https://www.facebook.com/share/15yNN2R4ys/" target="_blank">Follow Us</a></p>
+        <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
+        <p><i class="fas fa-phone"></i><strong>Phone:</strong> <a href="tel:+919433646899">094336 46899</a></p>
+        <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i><strong>WhatsApp:</strong> <a href="https://wa.me/919433646899" target="_blank">Chat Now</a></p>
+        <p><i class="fab fa-facebook"></i><strong>Facebook:</strong> <a href="https://www.facebook.com/share/15yNN2R4ys/" target="_blank">Follow Us</a></p>
     </div>
 
     <!-- Footer -->
@@ -238,6 +170,7 @@
 
 </body>
 </html>
+
 
 
 
