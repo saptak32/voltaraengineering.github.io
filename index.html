@@ -88,6 +88,14 @@
 
         h2 { color: #2C3E50; }
 
+        /* About Section */
+        .about-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
         /* Services */
         .services {
             display: flex;
@@ -109,6 +117,28 @@
             transform: scale(1.05);
         }
 
+        .service-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
         /* Contact Section */
         .contact {
             margin-top: 30px;
@@ -123,6 +153,13 @@
 
         .contact a:hover {
             text-decoration: underline;
+        }
+
+        .map {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin-top: 10px;
         }
 
         /* Footer */
@@ -143,6 +180,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -156,6 +194,7 @@
     <div id="about" class="container">
         <h2>About Us</h2>
         <p>VoltAra Engineering is committed to providing high-quality electrical and civil engineering services. With a team of experienced professionals, we ensure safe and efficient solutions tailored to your needs.</p>
+        <img class="about-image" src="https://source.unsplash.com/500x300/?engineering,construction" alt="About VoltAra">
     </div>
 
     <!-- Services Section -->
@@ -163,13 +202,25 @@
         <h2>Our Services</h2>
         <div class="services">
             <div class="service-card">
+                <img class="service-image" src="https://source.unsplash.com/250x150/?construction,building" alt="Civil Engineering">
                 <h3>Civil Engineering</h3>
                 <p>We offer complete civil engineering solutions, including construction, renovation, and structural safety assessments.</p>
             </div>
             <div class="service-card">
+                <img class="service-image" src="https://source.unsplash.com/250x150/?electrical,wiring" alt="Electrical Installations">
                 <h3>Electrical Installations</h3>
                 <p>Expert wiring, installation of service panels, and circuit breaker maintenance to ensure electrical safety.</p>
             </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="container">
+        <h2>Project Gallery</h2>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/250x180/?power-lines" alt="Project 1">
+            <img src="https://source.unsplash.com/250x180/?electricity,substation" alt="Project 2">
+            <img src="https://source.unsplash.com/250x180/?civil,construction" alt="Project 3">
         </div>
     </div>
 
@@ -178,9 +229,8 @@
         <h2>Contact Us</h2>
         <p><strong>📍 Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
         <p><strong>📞 Phone:</strong> 094336 46899</p>
-        <p><strong>📧 Email:</strong> <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a> | <a href="mailto:voltaraenterprise@gmail.com">voltaraenterprise@gmail.com</a></p>
-        <p><strong>🌍 Website:</strong> <a href="https://voltaraengineering.com" target="_blank">voltaraengineering.com</a></p>
-        <p><strong>📘 Facebook:</strong> <a href="https://www.facebook.com/share/15yNN2R4ys/" target="_blank">Follow us</a></p>
+        <p><strong>📧 Email:</strong> voltarawiringco@gmail.com</p>
+        <img class="map" src="https://source.unsplash.com/600x300/?map,location" alt="Map">
     </div>
 
     <!-- Footer -->
@@ -190,3 +240,4 @@
 
 </body>
 </html>
+
