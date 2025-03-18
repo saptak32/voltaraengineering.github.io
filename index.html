@@ -6,13 +6,13 @@
     <title>VoltAra Engineering</title>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <style>
-        /* Global Styles */
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #1b1f3b, #3a3f72);
-            color: white;
+            background-color: #0d1321;
+            color: #eeeeee;
             text-align: center;
         }
 
@@ -22,8 +22,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
-            background: #0d1321;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            background: #1b1f3b;
             position: fixed;
             width: 100%;
             top: 0;
@@ -58,15 +57,13 @@
             color: #00aaff;
         }
 
-        /* Banner */
+        /* Hero Banner */
         .banner {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            background: url('https://images.unsplash.com/photo-1516388723173-b6d352046ac2?w=1600') no-repeat center center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1516388723173-b6d352046ac2?w=1600') no-repeat center center/cover;
             text-align: center;
             margin-top: 60px;
         }
@@ -78,7 +75,7 @@
             border-radius: 8px;
         }
 
-        /* Main Content */
+        /* Main Container */
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -92,36 +89,27 @@
         h2 { color: #00aaff; }
 
         /* Services */
-        .service-buttons {
-            margin-top: 20px;
+        .services {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
 
-        .service-btn {
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            border-radius: 5px;
-            transition: 0.3s;
-            display: inline-block;
-            width: 220px;
-            text-align: center;
+        .service-card {
+            width: 250px;
+            background: #1b1f3b;
+            padding: 20px;
+            border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
         }
 
-        .civil { background: #007bff; }
-        .electrical { background: #28a745; }
-
-        .service-btn:hover {
+        .service-card:hover {
             transform: scale(1.05);
-            opacity: 0.9;
         }
 
-        /* Contact */
+        /* Contact Section */
         .contact {
             margin-top: 30px;
             font-size: 18px;
@@ -141,7 +129,7 @@
         footer {
             margin-top: 40px;
             padding: 15px;
-            background: #0d1321;
+            background: #1b1f3b;
         }
     </style>
 </head>
@@ -152,5 +140,52 @@
         <div class="logo">VoltAra Engineering</div>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Reliable Power, Trusted Connections</h1>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container">
+        <h2>About Us</h2>
+        <p>VoltAra Engineering is committed to providing high-quality electrical and civil engineering services. With a team of experienced professionals, we ensure safe and efficient solutions tailored to your needs.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Civil Engineering</h3>
+                <p>We offer complete civil engineering solutions, including construction, renovation, and structural safety assessments.</p>
+            </div>
+            <div class="service-card">
+                <h3>Electrical Installations</h3>
+                <p>Expert wiring, installation of service panels, and circuit breaker maintenance to ensure electrical safety.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container contact">
+        <h2>Contact Us</h2>
+        <p><strong>📍 Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
+        <p><strong>📞 Phone:</strong> 094336 46899</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a> | <a href="mailto:voltaraenterprise@gmail.com">voltaraenterprise@gmail.com</a></p>
+        <p><strong>🌍 Website:</strong> <a href="https://voltaraengineering.com" target="_blank">voltaraengineering.com</a></p>
+        <p><strong>📘 Facebook:</strong> <a href="https://www.facebook.com/share/15yNN2R4ys/" target="_blank">Follow us</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 VoltAra Engineering. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
