@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoltAra Engineering</title>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/134403f3c6.js" crossorigin="anonymous"></script>
     <style>
         /* General Styles */
         body {
@@ -21,7 +21,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+            padding: 10px 20px;
             background: #2C3E50;
             position: fixed;
             width: 100%;
@@ -29,8 +29,20 @@
             z-index: 1000;
         }
 
-        .logo img {
+        .navbar .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
             height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-container span {
+            color: #F4F6F7;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         .menu {
@@ -62,7 +74,7 @@
             align-items: center;
             justify-content: center;
             height: 300px;
-            background: url('banner.jpg.jpg') no-repeat center center/cover;
+            background: url('banner.jpg') no-repeat center center/cover;
             margin-top: 60px;
         }
 
@@ -133,13 +145,6 @@
             margin-bottom: 15px;
         }
 
-        /* Gallery */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-
         /* Contact */
         .contact {
             font-size: 18px;
@@ -168,7 +173,10 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <div class="logo"><img src="V_20250318_213118_0000.png" alt="VoltAra Logo"></div>
+        <div class="logo-container">
+            <img src="voltara-logo.png" alt="VoltAra Logo">
+            <span>VoltAra Engineering</span>
+        </div>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -188,7 +196,8 @@
         <h2>About Us</h2>
         <div class="about-container">
             <div class="about-text">
-                <p>VoltAra Engineering provides top-tier electrical and civil engineering solutions with a dedicated team of experts ensuring safety and efficiency.</p>
+                <p>VoltAra Engineering is a leading provider of electrical and civil engineering solutions. With a team of expert engineers and certified technicians, we ensure high-quality service, efficiency, and safety in all our projects.</p>
+                <p>We specialize in electrical installations, industrial wiring, high-voltage maintenance, and complete civil construction services. Our mission is to deliver innovative and sustainable solutions to meet the evolving needs of our clients.</p>
             </div>
             <img class="about-image" src="pexels-pixabay-414967.jpg" alt="About VoltAra">
         </div>
@@ -229,5 +238,6 @@
 
 </body>
 </html>
+
 
 
