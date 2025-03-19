@@ -199,18 +199,22 @@
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.gallery img:hover {
-    transform: scale(1.1);
-            }
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            background: #2C3E50;
-            color: #F4F6F7;
-        }
+/* Zoom effect on click */
+.gallery img:active {
+    transform: scale(2);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background: #2C3E50;
+    color: #F4F6F7;
+}
+
     </style>
 </head>
 <body>
@@ -272,15 +276,19 @@
 
     </div>
 </div>
- <!-- Gallery -->
-    <div id="gallery" class="container">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="pexels-kindelmedia-9889064.jpg" alt="Project Image 1">
-            <img src="pexels-pixabay-207541.jpg" alt="Project Image 2">
-            <img src="pexels-thisisengineering-3862379.jpg" alt="Project Image 3">
-        </div>
+    <!-- Gallery -->
+<div id="gallery" class="container">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="pexels-kindelmedia-9889064.jpg" alt="Project Image 1" class="zoomable">
+        <img src="pexels-pixabay-207541.jpg" alt="Project Image 2" class="zoomable">
+        <img src="pexels-thisisengineering-3862379.jpg" alt="Project Image 3" class="zoomable">
+        <img src="image1.jpg" alt="Project Image 4" class="zoomable">
+        <img src="image2.jpg" alt="Project Image 5" class="zoomable">
+        <img src="image3.jpg" alt="Project Image 6" class="zoomable">
     </div>
+</div>
+
     
 <!-- Join Us -->
 <div id="join-us" class="container join-us">
