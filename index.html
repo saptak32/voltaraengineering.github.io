@@ -296,7 +296,22 @@
     <a href="join-us.html" class="join-button">Join Us</a>
 </div>
 
-<!-- Contact Us remains as before -->
+<!-- Join Us -->
+<div id="join-us" class="container join-us">
+    <h2>Join Us</h2>
+    <p>Be a part of VoltAra Engineering! We are always looking for skilled professionals to join our team. Whether you’re an experienced engineer, technician, or someone passionate about the industry, we welcome you to grow with us.</p>
+    <p><strong>Opportunities Available:</strong></p>
+    <ul>
+        <li>Electrical Engineers (HT & LT Systems)</li>
+        <li>Civil Engineers (Construction & Planning)</li>
+        <li>Licensed Technicians & Electricians</li>
+        <li>Project Coordinators</li>
+    </ul>
+    <p><strong>Interested?</strong> Send your resume or inquiry to <a href="mailto:voltarawiringco@gmail.com">voltarawiringco@gmail.com</a></p>
+    <a href="join-us.html" class="join-button">Join Us</a>
+</div>
+
+<!-- Contact Us -->
 <div id="contact" class="container contact">
     <h2>Contact Us</h2>
     <p><strong> Address:</strong> Baikunthpur, Baguipara Road, Sonarpur, Kolkata 700149</p>
@@ -316,6 +331,34 @@
 
 <!-- Add this CSS to your style section or CSS file -->
 <style>
+    .join-us, .contact {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .join-us {
+        background-image: url('join-bg.jpg'); /* Replace with your image */
+    }
+
+    .contact {
+        background-image: url('contact-bg.jpg'); /* Replace with your image */
+    }
+
+    .join-us h2, .contact h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .join-us p, .contact p, .join-us ul {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
     .join-button {
         display: inline-block;
         margin-top: 15px;
@@ -327,6 +370,7 @@
         border-radius: 5px;
         transition: background 0.3s;
     }
+    
     .join-button:hover {
         background: #2980b9;
     }
