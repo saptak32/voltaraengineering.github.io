@@ -159,7 +159,25 @@
         .contact a:hover {
             text-decoration: underline;
         }
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
+.gallery img {
+    width: 180px; /* Reduced from 250px */
+    height: 130px; /* Reduced from 180px */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+            }
         /* Footer */
         footer {
             margin-top: 40px;
